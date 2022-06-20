@@ -11,7 +11,7 @@ export default function Footer() {
 
     return (
         <footer>
-            <address>Created by <a style={themeStyle} href="https://github.com/FooLeeSze/fcc-portfolio" target="_blank" rel="noreferrer">Lee Sze Foo</a></address>
+            <address>Created by <a style={themeStyle} href="https://github.com/FooLeeSze/portfolio" target="_blank" rel="noreferrer">Lee Sze Foo</a></address>
         </footer>
     )
 }
