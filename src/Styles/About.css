@@ -1,0 +1,132 @@
+/****************
+* About Section *
+****************/
+#about-me {
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+    width: 80%;
+}
+
+#about-section-title {
+    margin-bottom: 3rem;
+}
+
+#about-me h2 {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+#about-me h2:before {
+    content: ' ';
+    width: 80%;
+    height: 1rem;
+    background-color: var(--accent-color);
+    position: absolute;
+    right: -5px;
+    bottom: 5px;
+    z-index: -1;
+}
+
+#about-me p {
+    margin: auto;
+    margin-bottom: 2rem;
+    font-size: 2.9rem;
+    text-align: center;
+}
+
+#personal-info-container {
+    display: grid;
+    grid-template-areas: "pic" "info";
+}
+
+#personal-info {
+    grid-area: info;
+}
+
+#prof-pic-container {
+    grid-area: pic;
+    position: relative;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+#profile-pic {
+    width: 180px;
+}
+
+#profile-pic-container:before {
+    content: ' ';
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FA8072;
+}
+
+
+
+/***********************
+* Media Query - Medium *
+***********************/
+@media (min-width: 900px) {
+    /* About Section */
+    #about-me {
+        margin-bottom: 8rem;
+    }
+
+    #about-me p {
+        text-align: left;
+        font-size: 3.3rem;
+    }
+
+    #profile-pic {
+        width: 200px;
+    }
+
+    #personal-info-container {
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "info pic";
+        grid-gap: 3rem;
+        max-width: 980px;
+        margin: auto;
+    }
+
+    #personal-info {
+        grid-area: info;
+    }
+
+    #prof-pic-container {
+        height: 100%;
+        width: 100%;
+        grid-area: pic;
+    }
+
+    #profile-pic {
+        align-self: flex-start;
+    }
+}
+
+
+/*************
+* Animations *
+*************/
+/* Welcome banner slide in animation */
+#welcome-content {
+    animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-8em)
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0)
+    }
+}

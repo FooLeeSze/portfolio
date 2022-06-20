@@ -1,0 +1,51 @@
+/**********
+* Contact *
+**********/
+#contact {
+    height: 80vh;
+    position: relative;
+    background-color: var(--banner-bg-color);
+}
+
+#contact-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+#contact h2 {
+    padding-top: 0;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+#contact ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact li {
+    margin-bottom: 3rem;
+}
+
+#contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+}
+
+#contact i {
+    margin-right: 1rem;
+    width: 5rem;
+    text-align: center;
+}
+
+#contact a:hover {
+    color: var(--accent-color) !important;
+}

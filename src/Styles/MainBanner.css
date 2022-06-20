@@ -1,0 +1,51 @@
+/********************************
+* Welcome Section (Main Banner) *
+********************************/
+#welcome-section {
+    height: 100vh;
+    background-color: var(--banner-bg-color);
+    color: var(--light-color);
+    padding-left: 10px;
+    text-align: center;
+}
+
+#welcome-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcome-content p {
+    margin-bottom: 50px;
+}
+
+#scroll-down-btn {
+    background-color: var(--accent-color);
+    border-style: none;
+    font-size: 5rem;
+    color: var(--banner-bg-color);
+    height: 6rem;
+    width: 6rem;  
+    padding: 0 1rem;
+    border-radius: 50%;
+}
+
+#scroll-down-btn:hover{
+    cursor: pointer;
+    background-color: #f6958a;
+}
+
+#name {
+    display: block;
+}
+
+/**************
+* Media Query *
+**************/
+@media (min-width: 700px) {
+    /* Welcome Section */
+    #name {
+        display: inline;
+    }
+}

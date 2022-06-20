@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+
+/****************
+* Global Styles *
+****************/
+:root {
+    --banner-bg-color: #051014;
+    --bg-color:rgb(33, 33, 33);
+    --tile-color: #2E2F2F;
+    --accent-color: #FA8072;
+    --mid-color: #ACBDBA;
+    --light-color: #CDDDDD;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 3.5rem;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--light-color);
+    font-family: 'Rubik', sans-serif;
+}
+
+#portfolio {
+    position: relative;
+    
+}
+
+
+/**************
+* Media Query *
+**************/
+@media (min-width: 640px) {
+    * {
+        scroll-margin-top: 80px;
+    }
+    
+}   
