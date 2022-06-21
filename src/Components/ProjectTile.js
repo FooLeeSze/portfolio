@@ -15,14 +15,14 @@ export default function ProjectTile(props) {
         },
         links: {
             live: {
-                color: darkMode ? 'rgb(122, 198, 78)' : 'rgb(49, 122, 7)',
-                border: darkMode ? 'solid 2px rgb(122, 198, 78)' : 'solid 2px rgb(49, 122, 7)',
+                color: darkMode ? 'rgb(122, 198, 78)' : 'black',
+                border: darkMode ? 'solid 2px rgb(122, 198, 78)' : 'solid 2px rgb(78, 188, 14)',
                 backgroundColor: darkMode ? 'transparent' : 'rgb(147, 219, 107)'
             },
             code: {
-                color: darkMode ? 'rgb(96, 176, 245)' : 'rgb(22, 92, 153)',
-                border: darkMode ? 'solid 2px rgb(96, 176, 245)' : ' solid 2px rgb(22, 92, 153)',
-                backgroundColor: darkMode ? 'transparent' : 'rgb(137, 172, 240)'
+                color: darkMode ? 'rgb(96, 176, 245)' : 'black',
+                border: darkMode ? 'solid 2px rgb(96, 176, 245)' : ' solid 2px rgb(76, 131, 179)',
+                backgroundColor: darkMode ? 'transparent' : 'rgb(107, 186, 217)'
             }
         }
     }
