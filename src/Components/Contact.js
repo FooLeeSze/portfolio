@@ -6,8 +6,10 @@ import { useTheme } from '../ThemeContext'
 import '../Styles/Contact.css'
 
 export default function Contact() {
+    // Theme context
     const darkMode = useTheme();
 
+    // Light and dark theme styles
     const themeStyle = {
         text: {
             color: darkMode ? 'var(--light-color)' : 'black'

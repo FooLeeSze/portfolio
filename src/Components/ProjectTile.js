@@ -3,8 +3,10 @@ import { useTheme } from "../ThemeContext";
 
 export default function ProjectTile(props) {
 
+    // Theme context
     const darkMode = useTheme();
 
+    // Light and dark theme styles
     const themeStyles = {
         mainFont: {
             color: darkMode ? 'white' : 'black'

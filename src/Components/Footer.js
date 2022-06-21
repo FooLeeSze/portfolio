@@ -3,8 +3,10 @@ import { useTheme } from "../ThemeContext";
 import '../Styles/Footer.css'
 
 export default function Footer() {
+    // Theme context
     const darkMode = useTheme();
 
+    // Light and dark theme styles
     const themeStyle = {
         color: darkMode ? 'white' : 'black'
     }

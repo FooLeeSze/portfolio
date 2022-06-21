@@ -5,13 +5,15 @@ import { useTheme } from "../ThemeContext";
 import '../Styles/MainBanner.css'
 
 export default function MainBanner() {
-
+    // Theme context
     const darkMode = useTheme()
 
+    // Light and dark theme styles
     const themeStyle = {
         color: darkMode ? 'var(--banner-bg-color)' : 'var(--light-color)'
     }
 
+    // Scroll to About Section upon button click
     function scrollToElement(){;
         const anchor = document.querySelector('#about-me');
         anchor.scrollIntoView()

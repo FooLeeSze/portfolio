@@ -4,20 +4,24 @@ import ProjectTile from "./ProjectTile";
 import { useTheme } from "../ThemeContext";
 import '../Styles/Projects.css'
 
+// Number of project tiles shown by default
 const numProj_default = 6;
 
 export default function Projects() {
 
     const [numProj, setNumProj] = useState(numProj_default);
 
+    // Show more project tiles
     function showMore() {
         setNumProj(projects_data.length)
     }
 
+    // Show default number of project tiles
     function showLess() {
         setNumProj(numProj_default)
     }
 
+    // Light and dark theme styles
     const darkMode = useTheme();
     const themeStyle = {
         title: {
@@ -49,9 +53,3 @@ export default function Projects() {
         </section>
     )
 }
-
-/*
-<div id="more-btn-container">
-    <a href="https://github.com/FooLeeSze" target="_blank" rel="noreferrer" id="more-btn">See more</a>
-</div>
-*/

@@ -6,10 +6,12 @@ import '../Styles/NavBar.css'
 
 export default function NavBar() {
 
+    // Scroll to About Section upon selection
     function scrollToElement(event){
         handleScroll(event)
     }
 
+    // Scroll back to the top on page load
     useEffect(() => {
         const home = document.querySelector('#welcome-section');
         home.scrollIntoView({behavior:'smooth'})

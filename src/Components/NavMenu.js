@@ -8,24 +8,31 @@ import { useTheme } from "../ThemeContext";
 
 export default function NavMenu() {
 
+    // State on whether nav is open
     const [navBarOpen, setNavBarOpen] = useState(false);
+
+    // Theme context
     const darkMode = useTheme();
 
+    // Light and dark theme styles
     const themeStyle = {
         backgroundColor: darkMode ? 'black' : 'rgb(56, 113, 113)',
         display: navBarOpen ? 'block' : 'none'
     }
 
+    // Update nav open state when hamburger icon is clicked
     function handleHamburger() {
         setNavBarOpen(prev => !prev)
     }
 
+    // Scroll to section upon selection and close nav menu
     function scrollToElement(event){
         handleScroll(event)
 
         setNavBarOpen(false)
     }
 
+    // Scroll back to the top on page load
     useEffect(() => {
         const home = document.querySelector('#welcome-section');
         home.scrollIntoView({behavior:'smooth'})
