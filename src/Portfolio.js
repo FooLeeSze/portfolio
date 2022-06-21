@@ -1,4 +1,4 @@
-import React, {createContext, useState} from 'react'
+import React from 'react'
 import About from './Components/About'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'

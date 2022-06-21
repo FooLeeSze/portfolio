@@ -78,6 +78,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-bottom: 1rem;
 }
 
 .tech-used p {
@@ -92,18 +93,24 @@
 }
 
 .project-link {
-    color: rgb(96, 176, 245);
     font-size: 1.8rem;
     margin-right: 1rem;
     text-decoration: none;
     width: 100%;
     text-align: center;
-    border-bottom: solid 1px rgb(96, 176, 245);
+    
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
 }
 
-.project-link:hover {
-    color: var(--accent-color) !important;
-    border-bottom: solid 1px  var(--accent-color) !important;
+#live-link:hover {
+    background-color: rgb(122, 198, 78) !important;
+    color: black !important;
+}
+
+#code-link:hover {
+    background-color: rgb(96, 176, 245) !important;
+    color: black !important;
 }
 
 #more-less-container {

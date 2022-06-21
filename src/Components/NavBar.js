@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 import { handleScroll } from "../utils/navUtils";
-import { useTheme, useThemeUpdate } from "../ThemeContext";
 import ThemeToggle from './ThemeToggle'
 import '../Styles/NavBar.css'
 

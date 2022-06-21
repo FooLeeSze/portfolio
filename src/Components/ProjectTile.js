@@ -14,8 +14,16 @@ export default function ProjectTile(props) {
             color: darkMode ? 'var(--mid-color)' : '#4d4d4d'
         },
         links: {
-            color: darkMode ? 'rgb(96, 176, 245)' : '#1200e2',
-            borderBottom: darkMode ? 'solid 1px rgb(96, 176, 245)' : 'solid 1px #1200e2',
+            live: {
+                color: darkMode ? 'rgb(122, 198, 78)' : 'rgb(49, 122, 7)',
+                border: darkMode ? 'solid 2px rgb(122, 198, 78)' : 'solid 2px rgb(49, 122, 7)',
+                backgroundColor: darkMode ? 'transparent' : 'rgb(147, 219, 107)'
+            },
+            code: {
+                color: darkMode ? 'rgb(96, 176, 245)' : 'rgb(22, 92, 153)',
+                border: darkMode ? 'solid 2px rgb(96, 176, 245)' : ' solid 2px rgb(22, 92, 153)',
+                backgroundColor: darkMode ? 'transparent' : 'rgb(137, 172, 240)'
+            }
         }
     }
 
@@ -33,8 +41,8 @@ export default function ProjectTile(props) {
                     {props.data.tech.map(tech => <p style={themeStyles.tech}>{tech}</p>)}
                 </div>
                 <div className="project-link-container" >
-                    <a href={props.data.liveLink} style={themeStyles.links} target="_blank" rel="noreferrer" className="project-link">Live</a>
-                    <a href={props.data.codeLink} style={themeStyles.links} target="_blank" rel="noreferrer" className="project-link">Code</a>
+                    <a href={props.data.liveLink} style={themeStyles.links.live} target="_blank" rel="noreferrer" className="project-link" id="live-link">Live</a>
+                    <a href={props.data.codeLink} style={themeStyles.links.code} target="_blank" rel="noreferrer" className="project-link" id="code-link">Code</a>
                 </div>
             </div>
         </div>
