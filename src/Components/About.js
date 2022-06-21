@@ -10,7 +10,7 @@ export default function About() {
             </div>
             <div id="personal-info-container">
                 <div id="personal-info">
-                    <p>I am a PhD graduate and a self-taught web developer! My main focus is on front-end development using React.</p>
+                    <p>I am a PhD graduate and a self-taught web developer! My main focus is on front end development using React.</p>
                     <p>I also have experience in scientific computation and developing machine learning models for classification tasks.</p>
                 </div>
 
