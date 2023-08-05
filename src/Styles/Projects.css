@@ -35,7 +35,6 @@
 }
 
 .project-tile {
-    overflow: hidden;
     display: grid;
     grid-template-rows: auto 1fr;
     font-size: 2.3rem;
@@ -65,6 +64,12 @@
     grid-template-rows: auto auto 1fr;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.project-tile-content-shadow {
+    -webkit-box-shadow: 0px 9px 20px 1px rgba(199,199,199,1);
+    -moz-box-shadow: 0px 9px 20px 1px rgba(199,199,199,1);
+    box-shadow: 0px 9px 20px 1px rgba(199,199,199,1);
 }
 
 .project-title {
